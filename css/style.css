@@ -66,6 +66,7 @@ body {
 
 .nav-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 300px;
 }
@@ -133,6 +134,7 @@ body {
 
 .benefits ul li {
   display: flex;
+  align-items: center;
   gap: 14px;
 }
 
@@ -397,5 +399,138 @@ footer {
 
   .main-content {
     padding: 0;
+  }
+}
+
+@media (max-width: 658px) {
+  .nav-menu {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .notice {
+    max-width: 420px;
+  }
+
+  .notice p {
+    text-align: center;
+    width: 78%;
+  }
+
+  .header {
+    padding: 35px 0 0 0;
+    flex-direction: row;
+  }
+
+  .container {
+    max-width: 420px;
+  }
+
+  .nav-menu {
+    width: 40px;
+    height: 32px;
+    background: url(../img/HamburgerMenu.svg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .nav,
+  .login {
+    display: none;
+  }
+
+  .main-content {
+    grid-template-rows: auto;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #292929;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 14px;
+    width: 70%;
+    color: #645f50;
+  }
+
+  .benefits ul {
+    font-size: 18px;
+  }
+
+  .information-img {
+    height: 365px;
+    background: url(../img/Hero\ Image\ \(Mobile\).png) no-repeat center center;
+    background-size: contain;
+    margin: 40px 0 20px 0;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 60px;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
+
+  .companies {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 60px 15px;
+  }
+
+  .secure {
+    background: url(../img/Phone\ Mockup\ \(Mobile\).png) no-repeat right bottom;
+    background-color: #f0eeeb;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+
+  .secure-info {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .secure-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .text-editor {
+    grid-template-rows: 0.9fr 1fr;
+  }
+
+  .text-editor-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    grid-template-rows: auto 1fr;
+    padding: 60px 0px;
+  }
+
+  .footer-info h2 {
+    font-size: 14px;
+  }
+
+  .nav-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .nav-footer ul p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .nav-footer ul li a {
+    font-size: 16px;
   }
 }
