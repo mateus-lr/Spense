@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  display: block;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background: #f0eeeb;
+}
+
+/* Global */
+.white-bg {
+  background: #ffffff;
+}
+
+.logo {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 10px 10px 10px
+}
+
+/* Notice */
+.notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background: #000000;
+  color: #ffffff;
+}
+
+.notice span {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1318px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0px;
+  font-weight: 600;
+  font-size: 20px
+}
+
+.menu {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  ;
+}
+
+.login-btn {
+  color: #000000;
+  padding: 20px 23px;
+}
+
+.get-started-btn {
+  padding: 20px 23px;
+  background: #000000;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+/* Main content */
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 80px;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-size: 76px;
+  font-weight: 900;
+  color: #292929;
+  margin-bottom: 32px;
+}
+
+.intro p {
+  font-size: 24px;
+  color: #645f50;
+}
+
+.intro p span {
+  font-style: italic;
+}
+
+.intro p:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.benefits ul {
+  font-size: 20px;
+  font-weight: 600;
+  color: #504a39;
+  margin-bottom: 32px;
+}
+
+.benefits ul li {
+  display: flex;
+  gap: 14px;
+}
+
+.benefits ul li+li {
+  margin-top: 10px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 20px;
+}
+
+.subscribe input {
+  width: 223px;
+  height: 64px;
+  text-align: center;
+  color: #b5b6b3;
+  font-size: 20px;
+  border: 2px solid #b7b7b6;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  width: 156px;
+  height: 64px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Companies */
+.companies {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 60px;
+  align-items: center;
+  padding: 60px 30px;
+}
+
+/* Secure */
+.secure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  padding: 0 100px;
+  background: url(../img/PhoneMockupDesktop.png) no-repeat right bottom;
+  background-color: #f0eeeb;
+  margin-bottom: 80px;
+}
+
+.secure-info {
+  padding: 80px 0;
+}
+
+.secure-info h2 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.secure-info p {
+  font-size: 20px;
+  color: #645f50;
+  margin-bottom: 20px;
+}
+
+.secure-info a {
+  font-size: 20px;
+  color: #534d3c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Text Editor */
+.text-editor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+}
+
+.text-editor-info {
+  padding-top: 50px;
+}
+
+.text-editor-info h2 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.text-editor-info p {
+  font-size: 20px;
+  color: #645f50;
+  margin-bottom: 20px;
+}
+
+.text-editor-info a {
+  font-size: 20px;
+  color: #534d3c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+}
+
+.footer {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  padding: 60px 100px 60px 60px;
+}
+
+.footer-info a {
+  color: #ffffff;
+}
+
+.footer-info h2 {
+  color: #959595;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  padding-left: 10px;
+}
+
+.footer-info h2 span {
+  font-style: italic;
+}
+
+.nav-footer {
+  display: flex;
+  gap: 80px;
+}
+
+.nav-footer ul p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.nav-footer ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #959595;
+}
+
+.nav-footer ul li+li {
+  margin-top: 10px;
+}
